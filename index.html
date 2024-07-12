@@ -16,6 +16,7 @@
             background-color: #5e548e;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
         header h1 {
             margin: 0;
@@ -70,8 +71,9 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin: 0 auto;
-            display: block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
         }
         .contact-info a {
             color: #e0b3ff;
@@ -84,6 +86,7 @@
 </head>
 <body>
     <header>
+        <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
         <h1>Deepak Jowel</h1>
     </header>
     <nav>
@@ -95,7 +98,6 @@
     <main>
         <section id="about" class="section futuristic">
             <h2>About Me</h2>
-            <img src="path/to/your/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
             <p>Welcome! I'm Deepak Jowel, a postgraduate student with a strong foundation in STEM. I have extensive research experience and have completed numerous projects as part of my curriculum. My expertise lies in machine learning and deep learning, with applications in computer vision, predictive modeling, and reinforcement learning. I aspire to become a roboticist who contributes to societal development, particularly in the healthcare industry.</p>
         </section>
         <section id="research" class="section futuristic">
@@ -112,7 +114,7 @@
         </section>
         <section id="contact" class="section futuristic">
             <h2>Contact</h2>
-            <p>Feel free to reach out to me via email at <a href="mailto:deepakjowel.095@gmail.com" style="color: #e0b3ff;">deepakjowel.095@gmail.com</a>.</p>
+            <p>Feel free to reach out to me via email at <a href="mailto:deepakjowel.095@gmail.com" class="contact-info">deepakjowel.095@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/deepakjowel95/" class="contact-info">LinkedIn</a>.</p>
         </section>
     </main>
     <footer>

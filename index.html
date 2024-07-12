@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepak Jowel - Robotics and Autonomous Systems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #1f1b24;
             color: #ffffff;
             margin: 0;
@@ -22,6 +24,10 @@
             margin: 0;
             font-size: 2.5em;
             color: #e0b3ff;
+            transition: color 0.3s;
+        }
+        header h1:hover {
+            color: #cba0ea;
         }
         nav {
             display: flex;
@@ -34,9 +40,10 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
+            transition: color 0.3s;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #cba0ea;
         }
         main {
             padding: 20px;
@@ -49,17 +56,39 @@
             border-bottom: 2px solid #5e548e;
             padding-bottom: 10px;
         }
+        .card {
+            background: #362c5a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
         footer {
             background-color: #5e548e;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
+            position: relative;
         }
         footer p {
             margin: 0;
             color: #e0b3ff;
+        }
+        footer .social-icons {
+            margin-top: 10px;
+        }
+        footer .social-icons a {
+            color: #e0b3ff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        footer .social-icons a:hover {
+            color: #cba0ea;
         }
         .futuristic {
             background: linear-gradient(145deg, #3c3b5e, #201f33);
@@ -82,6 +111,23 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+                top: 10px;
+                left: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -102,23 +148,34 @@
         </section>
         <section id="research" class="section futuristic">
             <h2>Research</h2>
-            <p>My research focuses on leveraging machine learning and deep learning techniques to solve complex problems in various domains. I have worked on projects involving computer vision, predictive modeling, and reinforcement learning. Through my research, I aim to push the boundaries of what is possible in robotics and autonomous systems.</p>
+            <div class="card">
+                <p>My research focuses on leveraging machine learning and deep learning techniques to solve complex problems in various domains. I have worked on projects involving computer vision, predictive modeling, and reinforcement learning. Through my research, I aim to push the boundaries of what is possible in robotics and autonomous systems.</p>
+            </div>
         </section>
         <section id="projects" class="section futuristic">
             <h2>Projects</h2>
-            <ul>
-                <li><strong>Project 1:</strong> Computer Vision-based Object Detection System</li>
-                <li><strong>Project 2:</strong> Predictive Modeling for Healthcare Analytics</li>
-                <li><strong>Project 3:</strong> Reinforcement Learning for Autonomous Navigation</li>
-            </ul>
+            <div class="card">
+                <p><strong>Project 1:</strong> Computer Vision-based Object Detection System</p>
+            </div>
+            <div class="card">
+                <p><strong>Project 2:</strong> Predictive Modeling for Healthcare Analytics</p>
+            </div>
+            <div class="card">
+                <p><strong>Project 3:</strong> Reinforcement Learning for Autonomous Navigation</p>
+            </div>
         </section>
         <section id="contact" class="section futuristic">
             <h2>Contact</h2>
-            <p>Feel free to reach out to me via email at <a href="mailto:deepakjowel.095@gmail.com" class="contact-info">deepakjowel.095@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/deepak-jowel-22b733122/" class="contact-info">LinkedIn</a>.</p>
+            <p>Feel free to reach out to me via email at <a href="mailto:deepakjowel.095@gmail.com" class="contact-info">deepakjowel.095@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/deepak-jowel-22b733122" class="contact-info">LinkedIn</a>.</p>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Deepak Jowel. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/deepakjowel95/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/deepakjowel95"><i class="fab fa-github"></i></a>
+            <a href="mailto:deepak@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
     </footer>
 </body>
 </html>
